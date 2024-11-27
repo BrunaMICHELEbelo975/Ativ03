@@ -1,12 +1,9 @@
-package Cadastro_De_Contatos;
+package Contatos;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.util.Vector;
 
 public class TelaCadastroContatos {
     private JPanel panelInferior;
@@ -26,6 +23,7 @@ public class TelaCadastroContatos {
     public TelaCadastroContatos() {
 
         ControleDeContatos controle = new ControleDeContatos();
+        executNoInicio();
 
         btnAdicionar.addActionListener(new ActionListener() {
             @Override
@@ -73,7 +71,18 @@ public class TelaCadastroContatos {
         });
     }
 
+    public void executNoInicio(){
+
+        DefaultTableModel model = (DefaultTableModel) tbContatos.getModel();
+
+        if (model.getColumnCount() == 0) {
+            model.setColumnIdentifiers(new String[]{"Nome", "Telefone", "Email"});
+        }
+
+    }
+
     public static void main(String[] args) {
+
 
         JFrame frame = new JFrame("Cadastro de Contatos");
         frame.setContentPane(new TelaCadastroContatos().panelTelaContatos);
@@ -82,4 +91,5 @@ public class TelaCadastroContatos {
         frame.setVisible(true);
 
     }
+
 }

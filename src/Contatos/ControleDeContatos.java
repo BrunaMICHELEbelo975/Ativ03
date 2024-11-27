@@ -1,4 +1,4 @@
-package Cadastro_De_Contatos;
+package Contatos;
 
 import java.util.ArrayList;
 import java.util.List;

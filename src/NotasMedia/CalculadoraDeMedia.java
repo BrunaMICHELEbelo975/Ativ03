@@ -1,4 +1,4 @@
-package Aplicativo_de_Notas_e_Media;
+package NotasMedia;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,6 @@
-package Calculadora_IMC;
+package CalcIMC;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Locale;
@@ -73,7 +72,7 @@ public class Calculadora_IMC {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Calculadora_IMC");
+        JFrame frame = new JFrame("CalcIMC");
         frame.setContentPane(new Calculadora_IMC().panelDeAcesso);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300,300);

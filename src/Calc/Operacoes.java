@@ -1,4 +1,4 @@
-package Atividade_1_Calculadora;
+package Calc;
 
 import java.util.Locale;
 
